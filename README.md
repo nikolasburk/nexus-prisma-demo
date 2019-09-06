@@ -1,4 +1,4 @@
-# GraphQL Day 2019: Code-first GraphQL Server Development with Prisma
+# Code-first GraphQL Server Development with Prisma (GraphQL Day Bodensee 2019)
 
 ![](https://imgur.com/4ytyVYH.png)
 
