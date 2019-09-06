@@ -12,7 +12,7 @@ npm install -g prisma2
 
 ```
 git clone git@github.com:nikolasburk/nexus-prisma-demo.git
-cd nexus-demo
+cd nexus-prisma-demo
 ```
 
 ### 2. Install dependencies
@@ -29,7 +29,7 @@ npm install
 prisma2 dev
 ```
 
-> **Note**: This performs an initial database migration. To persist the migration into Lift's migration history, run `prisma2 lift save` and `prisma2 lift up` later.
+> **Note**: This performs an initial database migration. To persist the migration into Lift's migration history, run `prisma2 lift save` and `prisma2 lift up` later. You can now also access Prisma Studio at [`http://localhost:5555`](http://localhost:5555).
 
 ### 4. Start the GraphQL server
 
