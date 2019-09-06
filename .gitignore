@@ -3,3 +3,4 @@ node_modules
 migrations
 generated
 *.lock
+.DS_Store
