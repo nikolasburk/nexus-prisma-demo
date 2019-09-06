@@ -1,6 +1,10 @@
 # Code-first GraphQL Server Development with Prisma (GraphQL Day Bodensee 2019)
 
+You can find the slides from the presentation [here](https://www.slideshare.net/nburk/codefirst-graphql-server-development-with-prisma).
+
 ![](https://imgur.com/4ytyVYH.png)
+
+## Get started
 
 ### 0. Install the Prisma 2 CLI
 
