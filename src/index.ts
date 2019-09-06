@@ -6,7 +6,7 @@ import { nexusPrismaPlugin } from '@generated/nexus-prisma'
 const photon = new Photon()
 
 const nexusPrismaTypes = nexusPrismaPlugin({
-  photon: ctx => ctx.photon
+  photon: ctx => ctx.photon,
 })
 
 const User = objectType({
@@ -34,33 +34,39 @@ const Query = objectType({
   name: 'Query',
   definition(t) {
     t.crud.users()
+    t.crud.posts({
+      filtering: true,
+      ordering: true,
+      pagination: true,
+    })
   },
 })
 
 const Mutation = objectType({
   name: 'Mutation',
   definition(t) {
-   t.crud.createOneUser({
-     alias: 'createUser'
-   })
+    t.crud.createOneUser({
+      alias: 'createUser',
+    })
 
-   t.crud.updateOneUser({
-    alias: 'updateUser'
-  })
+    t.crud.updateOneUser({
+      alias: 'updateUser',
+    })
 
-  t.crud.createOnePost({
-    alias: 'createDraft'
-  })
-   
+    t.crud.createOnePost({
+      alias: 'createDraft',
+    })
+
     t.field('publish', {
       type: 'Post',
       args: {
         id: idArg(),
       },
-      resolve: (_, args) => photon.posts.update({
-        where: { id: args.id },
-        data: { published: true }
-      })
+      resolve: (_, args) =>
+        photon.posts.update({
+          where: { id: args.id },
+          data: { published: true },
+        }),
     })
   },
 })
