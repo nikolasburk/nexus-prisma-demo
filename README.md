@@ -2,8 +2,6 @@
 
 You can find the slides from the presentation [here](https://www.slideshare.net/nburk/codefirst-graphql-server-development-with-prisma).
 
-![](https://imgur.com/4ytyVYH.png)
-
 ## Get started
 
 ### 0. Install the Prisma 2 CLI
@@ -44,3 +42,10 @@ npm start
 ### 5. Explore the GraphQL API
 
 You can now open a GraphQL Playground at [`http://localhost:4000`](http://localhost:4000) and start sending queries and mutation to the API.
+
+<details><summary>Getting excited about GraphQL Nexus and Prisma ....</sumary>
+
+![](https://imgur.com/4ytyVYH.png)
+
+
+</details>
