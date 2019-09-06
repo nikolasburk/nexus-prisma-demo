@@ -1,0 +1,5 @@
+node_modules
+*.db
+migrations
+generated
+*.lock
