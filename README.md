@@ -11,7 +11,7 @@ npm install -g prisma2
 ### 1. Clone the repository
 
 ```
-git clone 
+git clone git@github.com:nikolasburk/nexus-prisma-demo.git
 cd nexus-demo
 ```
 
