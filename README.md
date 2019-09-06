@@ -1,6 +1,6 @@
 # GraphQL Day 2019: Code-first GraphQL Server Development with Prisma
 
-## Get started
+![](https://imgur.com/4ytyVYH.png)
 
 ### 0. Install the Prisma 2 CLI
 
@@ -40,7 +40,3 @@ npm start
 ### 5. Explore the GraphQL API
 
 You can now open a GraphQL Playground at [`http://localhost:4000`](http://localhost:4000) and start sending queries and mutation to the API.
-
-## Code-first GraphQL servers without boilerplate
-
-![](https://imgur.com/4ytyVYH.png)
